@@ -1,0 +1,99 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f4f4f9;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container for the To-Do List */
+.todo-container {
+  background: #fff;
+  width: 350px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Heading style */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input group for adding a new task */
+.input-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#todo-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#add-btn {
+  padding: 10px 15px;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+#add-btn:hover {
+  background: #0056b3;
+}
+
+/* Styles for the To-Do List items */
+#todo-list {
+  list-style: none;
+}
+
+.todo-item {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.todo-item.completed {
+  background: #d4edda;
+  text-decoration: line-through;
+  color: #555;
+}
+
+/* The text within each task */
+.todo-text {
+  flex: 1;
+  cursor: pointer;
+}
+
+/* Delete button for each task */
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #FF1744;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 10px;
+}
